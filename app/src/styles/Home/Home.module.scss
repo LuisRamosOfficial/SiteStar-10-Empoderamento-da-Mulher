@@ -1,0 +1,42 @@
+main.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	margin-top: 8rem;
+	div.firstsection {
+		justify-content: center;
+		align-items: center;
+		
+		div.textbox {
+			h1 {
+				font-size: 3.5rem;
+			}
+			h2 {
+				color: #CD5BCF;
+				font-size: 2.5rem;
+			}
+			h3 {
+				font-size: 2rem;
+			}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		div.illustration {
+			width: 40%;
+
+			> div {
+				position: unset !important;
+			}
+
+			.image {
+				object-fit: contain;
+				width: 100% !important;
+				position: relative !important;
+				height: unset !important;
+			}
+		}
+		display: flex;
+	}
+}
