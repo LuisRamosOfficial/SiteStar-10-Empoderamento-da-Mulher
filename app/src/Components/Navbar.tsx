@@ -2,8 +2,10 @@ import React from 'react';
 import styles from '@/styles/Navbar/Navbar.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { MenuAction } from '@/Redux/Actions/Actions';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+	const router = useRouter();
 	const menuInfo = useSelector((state: any) => state.menu);
 	const dispatch = useDispatch();
 
@@ -26,7 +28,10 @@ const Navbar = () => {
 			<nav>
 				<div className={`${styles.slider} slider${menuInfo}`}></div>
 				<div
-					onClick={() => dispatch(MenuAction(1))}
+					onClick={() => {
+						dispatch(MenuAction(1));
+						router.push('/');
+					}}
 					className={
 						menuInfo == 1 ? `${styles.button} ${styles.active}` : styles.button
 					}
@@ -34,7 +39,10 @@ const Navbar = () => {
 					<p>Página Principal</p>
 				</div>
 				<div
-					onClick={() => dispatch(MenuAction(2))}
+					onClick={() => {
+						dispatch(MenuAction(2));
+						router.push('/destaques');
+					}}
 					className={
 						menuInfo == 2 ? `${styles.button} ${styles.active}` : styles.button
 					}
@@ -42,7 +50,7 @@ const Navbar = () => {
 					<p>Mulheres de Destaque</p>
 				</div>
 				<div
-					onClick={() => dispatch(MenuAction(3))}
+					onClick={() => {dispatch(MenuAction(3)); router.push('/progresso');}}
 					className={
 						menuInfo == 3 ? `${styles.button} ${styles.active}` : styles.button
 					}

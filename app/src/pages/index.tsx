@@ -10,10 +10,14 @@ import HeartIcon from '../Assets/Home/heartIcon.png';
 import EducationIcon from '../Assets/Home/Education.png';
 import HumanRightsIcon from '../Assets/Home/humanrights.png';
 import { useEffect, useRef, useState, FC } from 'react';
+import { useDispatch } from 'react-redux';
+import { MenuAction } from '@/Redux/Actions/Actions';
 
 const Home = () => {
+	const dispatch = useDispatch()
 	useEffect(() => {
 		AOS.init();
+		dispatch(MenuAction(1));
 	}, []);
 	return (
 		<>
