@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, FC } from 'react';
 import { useDispatch } from 'react-redux';
-import { MenuAction } from '@/Redux/Actions/Actions';
+import { MenuAction } from '../Redux/Actions/Actions';
 
 const progresso = () => {
 	const dispatch = useDispatch();

@@ -143,7 +143,9 @@ main.main div.thirdsection div.text {
   width: 80%;
 }
 main.main div.thirdsection div.text h1 {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
+  text-align: center;
+  width: 100%;
 }
 main.main div.thirdsection div.text p {
   font-weight: 250;
@@ -173,7 +175,7 @@ main.main div.thirdsection svg {
 }
 main.main div.fourthsection {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   width: 100vw;
   height: 1300px;
   position: relative;
@@ -191,11 +193,12 @@ main.main div.fourthsection p.title {
 main.main div.fourthsection div.megaphone {
   position: absolute;
   top: 0;
-  left: 80vw;
+  left: 84vw;
   background-image: url("../../Assets/Home/Megaphone.svg");
   background-size: cover;
   aspect-ratio: 388/499;
   width: 200px;
+  transform: scale(0.8);
   z-index: -1;
 }
 main.main div.fourthsection div.bg {
@@ -265,16 +268,16 @@ main.main div.fourthsection div.bg div.img img.person {
   transform: translate(-50%, -50%);
 }
 main.main div.fourthsection div.bg h1 {
-  transform: translateY(-100px);
+  transform: translateY(-60px);
   width: 80%;
   color: white;
-  font-size: 1.7rem;
+  font-size: 2vw;
   text-align: justify;
   opacity: 1;
   transition: 1s all ease-out 200ms;
 }
 main.main div.fourthsection div.bg h1.hidden {
-  transform: translateX(600px) translateY(-100px);
+  transform: translateX(600px) translateY(-60px);
   opacity: 0;
 }
 main.main div.fourthsection div.paperplane {
@@ -468,6 +471,164 @@ main.main div.fifthsection h6 {
     transition-delay: 200ms;
     transform: translateX(0);
   }
+  main.main div.thirdsection {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  main.main div.thirdsection div.text {
+    display: grid;
+    place-items: center;
+    width: 80%;
+  }
+  main.main div.thirdsection div.text h1 {
+    font-size: 1.4rem;
+  }
+  main.main div.thirdsection div.text p {
+    font-weight: 250;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  main.main div.thirdsection div.text button {
+    outline: none;
+    margin-top: 1rem;
+    border: none;
+    background-color: #9249be;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 200ms all ease-out;
+  }
+  main.main div.thirdsection div.text button:hover {
+    background-color: #853faf;
+    transform: translateY(-10px);
+  }
+  main.main div.thirdsection svg {
+    margin-left: 8rem;
+    width: 60%;
+  }
+  main.main div.fourthsection {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    width: 100vw;
+    height: 1300px;
+    position: relative;
+  }
+  main.main div.fourthsection p.title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  main.main div.fourthsection div.megaphone {
+    position: absolute;
+    top: 10vw;
+    left: 80vw;
+    background-image: url("../../Assets/Home/Megaphone.svg");
+    background-size: cover;
+    aspect-ratio: 388/499;
+    width: 15vw;
+    transform: scale(0.8);
+    z-index: -1;
+  }
+  main.main div.fourthsection div.bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    background-image: url("../../Assets/Home/bg2.svg");
+    background-size: cover;
+    width: 100vw;
+    z-index: 1;
+    aspect-ratio: 1972/1268;
+  }
+  main.main div.fourthsection div.bg div.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer > div {
+    position: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer {
+    width: 25%;
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(35deg);
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer > div {
+    position: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img svg.circle {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg div.img img.person {
+    position: relative;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg h1 {
+    transform: translateY(-40px);
+    width: 80%;
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    opacity: 1;
+    transition: 1s all ease-out 200ms;
+  }
+  main.main div.fourthsection div.bg h1.hidden {
+    transform: translateX(600px) translateY(-40px);
+    opacity: 0;
+  }
+  main.main div.fourthsection div.paperplane {
+    background-image: url("../../Assets/Home/PaperPlane.svg");
+    width: 15vw;
+    background-size: cover;
+    aspect-ratio: 236/276;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
 }
 @media screen and (max-width: 830px) {
   main.main div.firstsection {
@@ -602,6 +763,163 @@ main.main div.fifthsection h6 {
     transition-delay: 200ms;
     transform: translateX(0);
   }
+  main.main div.thirdsection {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    place-items: center;
+  }
+  main.main div.thirdsection div.text {
+    display: grid;
+    place-items: center;
+    width: 80%;
+  }
+  main.main div.thirdsection div.text h1 {
+    font-size: 1.4rem;
+  }
+  main.main div.thirdsection div.text p {
+    font-weight: 250;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  main.main div.thirdsection div.text button {
+    outline: none;
+    margin-top: 1rem;
+    border: none;
+    background-color: #9249be;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 200ms all ease-out;
+  }
+  main.main div.thirdsection div.text button:hover {
+    background-color: #853faf;
+    transform: translateY(-10px);
+  }
+  main.main div.thirdsection svg {
+    height: auto;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    width: 30vw;
+  }
+  main.main div.fourthsection {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    width: 100vw;
+    height: 700px;
+    position: relative;
+  }
+  main.main div.fourthsection p.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  main.main div.fourthsection div.megaphone {
+    display: none;
+  }
+  main.main div.fourthsection div.bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    background-image: url("../../Assets/Home/bg2.svg");
+    background-size: cover;
+    width: 100vw;
+    z-index: 1;
+    aspect-ratio: 1972/1268;
+  }
+  main.main div.fourthsection div.bg div.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer > div {
+    position: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .imagecontainer .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer {
+    width: 25%;
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(35deg);
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer > div {
+    position: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img .heartcontainer .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.fourthsection div.bg div.img svg.circle {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg div.img img.person {
+    position: relative;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main.main div.fourthsection div.bg h1 {
+    transform: translateY(-40px);
+    width: 80%;
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    opacity: 1;
+    transition: 1s all ease-out 200ms;
+  }
+  main.main div.fourthsection div.bg h1.hidden {
+    transform: translateX(600px) translateY(-40px);
+    opacity: 0;
+  }
+  main.main div.fourthsection div.paperplane {
+    display: none;
+  }
+  main.main div.fifthsection div.icons div.container {
+    width: 15%;
+  }
+  main.main div.fifthsection h6 {
+    font-size: 1rem;
+    width: 80%;
+    text-align: justify;
+    margin-top: 4rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
 }
 @media screen and (max-width: 530px) {
   main.main div.secondsection div.animate {
@@ -626,5 +944,45 @@ main.main div.fifthsection h6 {
     font-weight: 500;
     text-align: justify;
     transform: translateX(-100.5vw);
+  }
+  main.main div.fourthsection {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+  }
+  main.main div.fourthsection p.title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  main.main div.fourthsection div.bg {
+    top: 20%;
+  }
+  main.main div.fourthsection div.bg h1 {
+    transform: translateY(-10px);
+    width: 80%;
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    opacity: 1;
+    transition: 1s all ease-out 200ms;
+  }
+  main.main div.fifthsection div.icons div.container {
+    width: 20%;
+  }
+  main.main div.fifthsection h6 {
+    font-size: 0.7rem;
+    width: 80%;
+    text-align: justify;
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 1.3rem;
   }
 }/*# sourceMappingURL=Home.module.css.map */

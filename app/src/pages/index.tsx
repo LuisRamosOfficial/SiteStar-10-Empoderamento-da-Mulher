@@ -270,14 +270,11 @@ const FourthSection: FC = () => {
 					<div className={styles.imagecontainer}>
 						<Image alt="" src={PersonImg} fill className={styles.image} />
 					</div>
-					<div className={styles.heartcontainer}>
+					<div ref={sectionRef} className={styles.heartcontainer}>
 						<Image alt="" src={HeartImg} fill className={styles.image} />
 					</div>
 				</div>
-				<h1
-					ref={sectionRef}
-					className={sectionShow ? `` : `${styles.hidden}`}
-				>
+				<h1 className={sectionShow ? `` : `${styles.hidden}`}>
 					Além disso, temos uma secção de notícias que apresenta informações
 					atualizadas sobre as lutas das mulheres pelos seus direitos em todo o
 					mundo. As notícias são cuidadosamente selecionadas para destacar os
