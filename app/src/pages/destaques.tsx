@@ -115,8 +115,8 @@ const Card: FC<Card> = ({ name, img, data, shower, setData }) => {
 					<Image
 					className={styles.image}
 						alt=""
-						width={350}
-						height={350}
+						width={250}
+						height={250}
 						src={`/api/imagefetcher?url=${encodeURIComponent(img)}`}
 					/>
 				</div>

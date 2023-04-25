@@ -9,8 +9,7 @@
 	align-items: center;
 	transition: transform ease-out 200ms;
 	background: #000000;
-	width: 18%;
-	min-width: 350px;
+	min-width: 250px;
 	cursor: pointer;
 	height: auto;
 	&:hover {
@@ -40,6 +39,7 @@
 		white-space: nowrap;
 		text-align: center;
 		width: 80%;
+		font-size: 0.9rem;
 		font-weight: 600;
 		color: #ffffff;
 		margin-top: 0.2em;
@@ -62,4 +62,62 @@
 			transition: transform ease-in-out 1ms;
 		}
 	}
+}
+
+@media screen and (max-width: 700px) {
+.card {
+	transform: scale(0.7);
+	display: flex;
+	border: none;
+	margin: 0;
+	padding: 0;
+	border-radius: 30px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	transition: transform ease-out 200ms;
+	background: #000000;
+	width: 18%;
+	min-width: 250px;
+	cursor: pointer;
+	height: auto;
+	&:hover {
+		transform: scale(0.75);
+	}
+	&:active {
+		transform: scale(0.7);
+		transition: transform ease-in-out 1ms;
+	}
+	.imagecontainer {
+		width: 100%;
+
+		> div {
+			position: unset !important;
+		}
+
+		.image {
+			object-fit: contain;
+			width: 100% !important;
+			position: relative !important;
+			height: unset !important;
+		}
+	}
+	p {
+		display: block;
+		font-size: calc(0.8vw + 2vh);
+		white-space: nowrap;
+		text-align: center;
+		width: 100%;
+		font-weight: 600;
+		color: #ffffff;
+		margin-top: 0.2em;
+        margin-bottom: 0.4rem;
+	}
+	h3 {
+		color: white;
+		text-align: center;
+		width: 100%;
+		font-size: 1.1rem;
+	}
+}
 }
