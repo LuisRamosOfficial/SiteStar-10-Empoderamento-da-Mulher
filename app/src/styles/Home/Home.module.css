@@ -3,29 +3,51 @@ main.main {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  margin-top: 8rem;
+  margin-top: 11rem;
 }
 main.main div.firstsection {
   justify-content: center;
   align-items: center;
   display: flex;
 }
+main.main div.firstsection div.textbox.show {
+  transform: translateX(0);
+}
 main.main div.firstsection div.textbox {
+  transition: 1.5s transform ease-out;
+  transform: translateX(-70vw);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 main.main div.firstsection div.textbox h1 {
+  transition: 200ms transform ease-out;
   font-size: 3.5rem;
 }
+main.main div.firstsection div.textbox h1:hover {
+  transform: translateY(-10px);
+}
 main.main div.firstsection div.textbox h2 {
-  color: #CD5BCF;
+  transition: 400ms transform ease-out;
+  color: #cd5bcf;
   font-size: 2.5rem;
 }
+main.main div.firstsection div.textbox h2:hover {
+  transform: scale(1.1);
+}
 main.main div.firstsection div.textbox h3 {
+  transition: 200ms transform ease-out;
   font-size: 2rem;
 }
+main.main div.firstsection div.textbox h3:hover {
+  transform: translateY(-10px);
+}
+main.main div.firstsection div.illustration.show {
+  transform: translateX(0);
+}
 main.main div.firstsection div.illustration {
+  transition: 1.5s transform ease-out;
+  transform: translateX(50vw);
   width: 40%;
 }
 main.main div.firstsection div.illustration > div {
@@ -37,4 +59,572 @@ main.main div.firstsection div.illustration .image {
   width: 100% !important;
   position: relative !important;
   height: unset !important;
+}
+main.main div.secondsection {
+  background-image: url("../../Assets/Home/bg1.svg");
+  background-size: cover;
+  width: 100vw;
+  min-height: 1000px;
+  margin-bottom: 1rem;
+  display: grid;
+  position: relative;
+  grid-template-columns: 2.5fr 1fr;
+  place-items: center;
+}
+main.main div.secondsection span {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 10px;
+  height: 45%;
+}
+main.main div.secondsection div.animate {
+  height: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+main.main div.secondsection div.animate * {
+  position: absolute;
+  width: 80%;
+  display: block;
+}
+main.main div.secondsection div.animate svg.show:nth-child(1) {
+  transition: 1s transform ease-out 500ms;
+  transform: translate(25px, 25px);
+}
+main.main div.secondsection div.animate svg.show:nth-child(2) {
+  transition: 1s transform ease-out 1s;
+}
+main.main div.secondsection div.animate svg.show:nth-child(3) {
+  transition: 600ms transform ease-out 2300ms;
+  transform: translate(-15px, 25px) scale(1);
+  z-index: 3;
+}
+main.main div.secondsection div.animate svg.show:nth-child(4) {
+  transition: 1s transform ease-out 1500ms;
+}
+main.main div.secondsection div.animate svg.hidden:nth-child(1) {
+  transform: translate(500px, 25px);
+}
+main.main div.secondsection div.animate svg.hidden:nth-child(2) {
+  transform: translate(500px, 0px);
+}
+main.main div.secondsection div.animate svg.hidden:nth-child(3) {
+  transform: translate(-15px, 20px) scale(0);
+}
+main.main div.secondsection div.animate svg.hidden:nth-child(4) {
+  transform: translate(500px, 0px);
+}
+main.main div.secondsection h2 {
+  margin-right: 10rem;
+  font-size: 2rem;
+  color: white;
+  width: 70%;
+  font-weight: 500;
+  text-align: justify;
+  transform: translateX(-55.5vw);
+}
+main.main div.secondsection h2.show {
+  transition: 1s transform ease-out;
+  transition-delay: 200ms;
+  transform: translateX(0);
+}
+main.main div.thirdsection {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+main.main div.thirdsection div.text {
+  display: grid;
+  place-items: center;
+  width: 80%;
+}
+main.main div.thirdsection div.text h1 {
+  font-size: 2.1rem;
+}
+main.main div.thirdsection div.text p {
+  font-weight: 250;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+main.main div.thirdsection div.text button {
+  outline: none;
+  border: none;
+  background-color: #9249be;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 200ms all ease-out;
+}
+main.main div.thirdsection div.text button:hover {
+  background-color: #853faf;
+  transform: translateY(-10px);
+}
+main.main div.thirdsection svg {
+  margin-left: 8rem;
+  width: 60%;
+}
+main.main div.fourthsection {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 100vw;
+  height: 1300px;
+  position: relative;
+}
+main.main div.fourthsection p.title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+main.main div.fourthsection div.megaphone {
+  position: absolute;
+  top: 0;
+  left: 80vw;
+  background-image: url("../../Assets/Home/Megaphone.svg");
+  background-size: cover;
+  aspect-ratio: 388/499;
+  width: 200px;
+  z-index: -1;
+}
+main.main div.fourthsection div.bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  position: absolute;
+  top: 17%;
+  left: 0;
+  background-image: url("../../Assets/Home/bg2.svg");
+  background-size: cover;
+  width: 100vw;
+  z-index: 1;
+  aspect-ratio: 1972/1268;
+}
+main.main div.fourthsection div.bg div.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main.main div.fourthsection div.bg div.img .imagecontainer {
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main.main div.fourthsection div.bg div.img .imagecontainer > div {
+  position: unset !important;
+}
+main.main div.fourthsection div.bg div.img .imagecontainer .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+main.main div.fourthsection div.bg div.img .heartcontainer {
+  width: 25%;
+  position: absolute;
+  top: 18%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(35deg);
+}
+main.main div.fourthsection div.bg div.img .heartcontainer > div {
+  position: unset !important;
+}
+main.main div.fourthsection div.bg div.img .heartcontainer .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+main.main div.fourthsection div.bg div.img svg.circle {
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main.main div.fourthsection div.bg div.img img.person {
+  position: relative;
+  z-index: 3;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main.main div.fourthsection div.bg h1 {
+  transform: translateY(-100px);
+  width: 80%;
+  color: white;
+  font-size: 1.7rem;
+  text-align: justify;
+  opacity: 1;
+  transition: 1s all ease-out 200ms;
+}
+main.main div.fourthsection div.bg h1.hidden {
+  transform: translateX(600px) translateY(-100px);
+  opacity: 0;
+}
+main.main div.fourthsection div.paperplane {
+  background-image: url("../../Assets/Home/PaperPlane.svg");
+  width: 200px;
+  background-size: cover;
+  aspect-ratio: 236/276;
+  height: auto;
+  position: absolute;
+  top: 3%;
+  left: 0;
+}
+main.main div.fifthsection {
+  margin-bottom: 10rem;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+main.main div.fifthsection div.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main.main div.fifthsection div.icons div.container {
+  width: 13%;
+}
+main.main div.fifthsection div.icons div.container:nth-child(1) {
+  transition-delay: 200ms;
+}
+main.main div.fifthsection div.icons div.container:nth-child(2) {
+  transition-delay: 400ms;
+}
+main.main div.fifthsection div.icons div.container:nth-child(3) {
+  transition-delay: 600ms;
+}
+main.main div.fifthsection div.icons div.container > div {
+  position: unset !important;
+}
+main.main div.fifthsection div.icons div.container .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+main.main div.fifthsection div.icons div.hidden {
+  transform: translateX(-100vw);
+}
+main.main div.fifthsection div.icons div.show {
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+}
+main.main div.fifthsection h6 {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: justify;
+  margin-top: 4rem;
+  font-weight: 300;
+  line-height: 3.3rem;
+}
+
+@media screen and (max-width: 1050px) {
+  main.main div.firstsection {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    display: flex;
+  }
+  main.main div.firstsection div.textbox.show {
+    transform: translateX(0);
+  }
+  main.main div.firstsection div.textbox {
+    transition: 1.5s transform ease-out;
+    transform: translateX(-70vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.main div.firstsection div.textbox h1 {
+    transition: 200ms transform ease-out;
+    font-size: 3rem;
+  }
+  main.main div.firstsection div.textbox h1:hover {
+    transform: translateY(-10px);
+  }
+  main.main div.firstsection div.textbox h2 {
+    transition: 400ms transform ease-out;
+    color: #cd5bcf;
+    font-size: 2rem;
+  }
+  main.main div.firstsection div.textbox h2:hover {
+    transform: scale(1.1);
+  }
+  main.main div.firstsection div.textbox h3 {
+    transition: 200ms transform ease-out;
+    font-size: 1.5rem;
+  }
+  main.main div.firstsection div.textbox h3:hover {
+    transform: translateY(-10px);
+  }
+  main.main div.firstsection div.illustration.show {
+    transform: translateX(0);
+  }
+  main.main div.firstsection div.illustration {
+    transition: 1.5s transform ease-out;
+    transform: translateX(50vw);
+    width: 40%;
+  }
+  main.main div.firstsection div.illustration > div {
+    position: unset !important;
+  }
+  main.main div.firstsection div.illustration .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.secondsection {
+    background-image: url("../../Assets/Home/bg1.svg");
+    background-size: cover;
+    width: 100vw;
+    min-height: 600px;
+    margin-bottom: 1rem;
+    display: grid;
+    padding-top: 4rem;
+    position: relative;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+  }
+  main.main div.secondsection span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 10px;
+    height: 45%;
+  }
+  main.main div.secondsection div.animate {
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+  }
+  main.main div.secondsection div.animate * {
+    position: absolute;
+    width: 60%;
+    display: block;
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(1) {
+    transform: translate(500px, 15px);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(2) {
+    transform: translate(500px, 0px);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(3) {
+    transform: translate(-15px, 15px) scale(0);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(4) {
+    transform: translate(500px, 0px);
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(1) {
+    transition: 1s transform ease-out 500ms;
+    transform: translate(15px, 15px);
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(2) {
+    transition: 1s transform ease-out 1s;
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(3) {
+    transition: 600ms transform ease-out 2300ms;
+    transform: translate(-15px, 15px) scale(1);
+    z-index: 3;
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(4) {
+    transition: 1s transform ease-out 1500ms;
+  }
+  main.main div.secondsection h2 {
+    margin-right: 0rem;
+    font-size: 1.3rem;
+    color: white;
+    width: 70%;
+    font-weight: 500;
+    text-align: justify;
+    transform: translateX(-55.5vw);
+  }
+  main.main div.secondsection h2.show {
+    transition: 1s transform ease-out;
+    transition-delay: 200ms;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 830px) {
+  main.main div.firstsection {
+    margin-bottom: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  main.main div.firstsection div.textbox.show {
+    transform: translateX(0);
+  }
+  main.main div.firstsection div.textbox {
+    transition: 1.5s transform ease-out;
+    transform: translateX(-70vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main.main div.firstsection div.textbox h1 {
+    transition: 200ms transform ease-out;
+    font-size: 2rem;
+  }
+  main.main div.firstsection div.textbox h1:hover {
+    transform: translateY(-10px);
+  }
+  main.main div.firstsection div.textbox h2 {
+    transition: 400ms transform ease-out;
+    color: #cd5bcf;
+    font-size: 1.3rem;
+  }
+  main.main div.firstsection div.textbox h2:hover {
+    transform: scale(1.1);
+  }
+  main.main div.firstsection div.textbox h3 {
+    transition: 200ms transform ease-out;
+    font-size: 1rem;
+  }
+  main.main div.firstsection div.textbox h3:hover {
+    transform: translateY(-10px);
+  }
+  main.main div.firstsection div.illustration.show {
+    transform: translateX(0);
+  }
+  main.main div.firstsection div.illustration {
+    transition: 1.5s transform ease-out;
+    transform: translateX(50vw);
+    width: 25rem;
+  }
+  main.main div.firstsection div.illustration > div {
+    position: unset !important;
+  }
+  main.main div.firstsection div.illustration .image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  main.main div.secondsection {
+    background-image: url("../../Assets/Home/bg1.svg");
+    background-size: cover;
+    width: 100vw;
+    min-height: 600px;
+    margin-bottom: 1rem;
+    display: grid;
+    padding-top: 10vh;
+    position: relative;
+    grid-template-rows: 0.7fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  main.main div.secondsection span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 10px;
+    height: 45%;
+  }
+  main.main div.secondsection div.animate {
+    transform: translateY(-80px);
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main.main div.secondsection div.animate * {
+    position: absolute;
+    width: 20vw;
+    display: block;
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(1) {
+    transform: translate(500px, 15px);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(2) {
+    transform: translate(500px, 0px);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(3) {
+    transform: translate(-15px, 15px) scale(0);
+  }
+  main.main div.secondsection div.animate svg.hidden:nth-child(4) {
+    transform: translate(500px, 0px);
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(1) {
+    transition: 1s transform ease-out 500ms;
+    transform: translate(15px, 15px);
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(2) {
+    transition: 1s transform ease-out 1s;
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(3) {
+    transition: 600ms transform ease-out 2300ms;
+    transform: translate(-15px, 15px) scale(1);
+    z-index: 3;
+  }
+  main.main div.secondsection div.animate svg.show:nth-child(4) {
+    transition: 1s transform ease-out 1500ms;
+  }
+  main.main div.secondsection h2 {
+    margin-right: 0rem;
+    font-size: 1rem;
+    color: white;
+    width: 90%;
+    font-weight: 500;
+    text-align: justify;
+    transform: translateX(-100.5vw);
+  }
+  main.main div.secondsection h2.show {
+    transition: 1s transform ease-out;
+    transition-delay: 200ms;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 530px) {
+  main.main div.secondsection div.animate {
+    transform: translateY(-80px);
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main.main div.secondsection div.animate * {
+    position: absolute;
+    width: 30vw;
+    display: block;
+  }
+  main.main div.secondsection h2 {
+    margin-right: 0rem;
+    font-size: 0.8rem;
+    color: white;
+    width: 90%;
+    font-weight: 500;
+    text-align: justify;
+    transform: translateX(-100.5vw);
+  }
 }/*# sourceMappingURL=Home.module.css.map */
