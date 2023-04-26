@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+
+module.exports = {
 	reactStrictMode: true,
 	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'empoderamentodamulher.pt',
+				port: '',
+				pathname: '/_next/**',
+			},
+		],
 		domains: [
 			'www.empoderamentodamulher.pt',
 			'https://www.empoderamentodamulher.pt',
@@ -11,6 +21,3 @@ const nextConfig = {
 	},
 };
 
-
-const withImage = require('next-images');
-module.exports = withImage();
