@@ -2,7 +2,11 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['empoderamentodamulher.pt'],
+		domains: [
+			'www.empoderamentodamulher.pt',
+			'https://empoderamentodamulher.pt/',
+			'empoderamentodamulher.pt/',
+		],
 	},
 };
 
