@@ -4,10 +4,22 @@ const nextConfig = {
 	images: {
 		domains: [
 			'www.empoderamentodamulher.pt',
+			'https://www.empoderamentodamulher.pt',
 			'https://empoderamentodamulher.pt/',
 			'empoderamentodamulher.pt/',
 		],
 	},
 };
 
-module.exports = nextConfig
+module.exports = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'empoderamentodamulher.pt',
+				port: '',
+				pathname: '/_next/',
+			},
+		],
+	},
+};
