@@ -18,7 +18,7 @@ module.exports = {
 				protocol: 'https',
 				hostname: 'empoderamentodamulher.pt',
 				port: '',
-				pathname: '/_next/',
+				pathname: '/_next/**',
 			},
 		],
 	},
