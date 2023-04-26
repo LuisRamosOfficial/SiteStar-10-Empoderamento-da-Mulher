@@ -717,7 +717,7 @@ main.main {
 			display: flex;
 		}
 		div.secondsection {
-			background-image: url('../../Assets/Home/bg1.svg');
+			background-image: url('');
 			background-size: cover;
 			width: 100vw;
 			min-height: 600px;
@@ -745,7 +745,7 @@ main.main {
 				width: 100%;
 				* {
 					position: absolute;
-					width: 20vw;
+					width: 40vw;
 					display: block;
 				}
 				svg.hidden {
@@ -782,16 +782,18 @@ main.main {
 			}
 			h2 {
 				margin-right: 0rem;
-				font-size: 1rem;
-				color: white;
+				font-size: 1.1rem;
+				color: black;
 				width: 90%;
 				font-weight: 500;
 				text-align: justify;
 				transform: translateX(-100.5vw);
 			}
 			h2.show {
+				font-size: 1.1rem;
 				transition: 1s transform ease-out;
 				transition-delay: 200ms;
+				color: black;
 				transform: translateX(0);
 			}
 		}
@@ -997,28 +999,76 @@ main.main {
 			margin-bottom: 1rem;
 
 			width: 100vw;
-			height: 500px;
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			aspect-ratio: auto;
+			align-items: center;
 			p.title {
-				position: absolute;
-				top: 15%;
-				left: 50%;
-				transform: translateX(-50%);
+				position: initial;
+				transform: translateX(0);
 				font-weight: 700;
 				font-size: 1rem;
 				width: 100%;
 				text-align: center;
 			}
 			div.bg {
-				top: 20%;
+				padding: 0rem;
+				position: initial;
+				display: flex;
+				aspect-ratio: auto;
+				align-items: center;
+				flex-direction: column;
+				div.img {
+					aspect-ratio: none;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+					.imagecontainer {
+						padding: none;
+						width: 40%;
+						position: initial;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						top: none;
+						left: none;
+						height: 100%;
+						transform: translate(0%, 0%);
+
+						> div {
+							position: unset !important;
+						}
+
+						.image {
+							object-fit: contain;
+							width: 100% !important;
+							position: relative !important;
+							height: unset !important;
+						}
+					}
+					.heartcontainer {
+						display: none;
+					}
+				}
+				background-image: url('');
 				h1 {
-					transform: translateY(-10px);
+					display: inline;
+					color: black;
+					transform: translateY(0);
 					width: 80%;
-					color: white;
-					font-size: 2vw;
+					font-size: 3vw;
 					text-align: justify;
+					height: 300px;
 					opacity: 1;
 					transition: 1s all ease-out 200ms;
+				}
+				h1.hidden {
+					transform: translateX(600px) translateY(0);
+					opacity: 0;
 				}
 			}
 		}

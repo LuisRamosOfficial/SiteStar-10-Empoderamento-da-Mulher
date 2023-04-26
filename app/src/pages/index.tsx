@@ -258,6 +258,15 @@ const FourthSection: FC = () => {
 
 	return (
 		<div className={styles.fourthsection}>
+			<p
+				data-aos="fade-up"
+				data-aos-easing="ease-out"
+				data-aos-duration="1000"
+				data-aos-delay="500"
+				className={styles.title}
+			>
+				EMPODERAMENTO FEMININO EM DESTAQUE
+			</p>
 			<div className={styles.bg}>
 				<div
 					data-aos="slide-right"
@@ -267,10 +276,10 @@ const FourthSection: FC = () => {
 					className={styles.img}
 				>
 					<Circle />
-					<div className={styles.imagecontainer}>
+					<div ref={sectionRef} className={styles.imagecontainer}>
 						<Image alt="" src={PersonImg} fill className={styles.image} />
 					</div>
-					<div ref={sectionRef} className={styles.heartcontainer}>
+					<div className={styles.heartcontainer}>
 						<Image alt="" src={HeartImg} fill className={styles.image} />
 					</div>
 				</div>
@@ -290,15 +299,7 @@ const FourthSection: FC = () => {
 				data-aos-delay="1000"
 				className={styles.megaphone}
 			></div>
-			<p
-				data-aos="fade-up"
-				data-aos-easing="ease-out"
-				data-aos-duration="1000"
-				data-aos-delay="500"
-				className={styles.title}
-			>
-				EMPODERAMENTO FEMININO EM DESTAQUE
-			</p>
+
 			<div
 				data-aos="slide-up"
 				data-aos-easing="ease-out"
@@ -398,7 +399,7 @@ const Circle1: FC<SvgProps> = ({ classCheck }) => {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<circle cx="264.5" cy="264.5" r="264.5" fill="#DCA3FF" />
+			<circle cx="264.5" cy="264.5" r="264.5" fill="#9652bf" />
 		</svg>
 	);
 };
@@ -540,7 +541,7 @@ const Circle2: FC<SvgProps> = ({ classCheck }) => {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<circle cx="264.5" cy="264.5" r="264.5" fill="white" />
+			<circle cx="264.5" cy="264.5" r="264.5" fill="#DCA3FF" />
 		</svg>
 	);
 };
