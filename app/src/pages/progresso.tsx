@@ -72,12 +72,13 @@ const progresso = () => {
 				</h5>
 				<div className={styles.list}>
 					{noticias.map((item) => (
-						<Boxes nome={item.Titulo} link={item.Link} imagem={item.Imagem} />
+						<Boxes key={item.Titulo} nome={item.Titulo} link={item.Link} imagem={item.Imagem} />
 					))}
 				</div>
 			</main>
 		</>
 	);
 };
+
 
 export default progresso;
