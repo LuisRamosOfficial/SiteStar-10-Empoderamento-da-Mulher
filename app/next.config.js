@@ -3,21 +3,19 @@
 
 module.exports = {
 	reactStrictMode: true,
+	i18n,
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'src/styles')],
+		prependData: `@import "variables.scss";`,
+	},
 	images: {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'empoderamentodamulher.pt',
+				hostname: '**',
 				port: '',
-				pathname: '/_next/**',
+				pathname: '**',
 			},
-		],
-		domains: [
-			'www.empoderamentodamulher.pt',
-			'https://www.empoderamentodamulher.pt',
-			'https://empoderamentodamulher.pt/',
-			'empoderamentodamulher.pt/',
 		],
 	},
 };
-
