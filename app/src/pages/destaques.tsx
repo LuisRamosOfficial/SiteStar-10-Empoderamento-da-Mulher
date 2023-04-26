@@ -90,7 +90,7 @@ const CardShower: FC<CardShower> = ({data, show}) => {
 						className={styles.image}
 						alt=""
 						fill
-						src={`/api/imagefetcher?url=${encodeURIComponent(data.img)}`}
+						src={data.img}
 					/>
 				</div>
 				<div className={styles.info}>

@@ -21,7 +21,7 @@ const Boxes: FC<Boxes> = ({nome, imagem, link}) => {
 				<div className={styles.image}>
 					<div className={styles.imagecontainer}>
 						<Image
-							src={`/api/imagefetcher?url=${encodeURIComponent(`${imagem}`)}`}
+							src={imagem}
 							fill
 							className={styles.img}
 							alt={''}
