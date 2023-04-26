@@ -11,15 +11,6 @@ const nextConfig = {
 	},
 };
 
-module.exports = {
-	images: {
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: 'empoderamentodamulher.pt',
-				port: '',
-				pathname: '/_next/**',
-			},
-		],
-	},
-};
+
+const withImage = require('next-images');
+module.exports = withImage();
